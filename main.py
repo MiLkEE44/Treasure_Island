@@ -23,28 +23,27 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-print("You're at a crossroad which direction do you want to head?")
-cross_road = input("Type 'left' or 'right'. \n")
+print("You're at a crossroad, which direction do you want to head?")
+cross_road = input('Type "left" or "right". \n')
 
-if cross_road == "left" or "Left" or "LEFT":
+if cross_road.lower() == "left":
     lake = input("You've made it to a lake, "
-                 "Do you want to wait for a boat or swim across? "
-                 "Type 'wait' or 'swim' \n")
-    if lake == "wait" or "Wait" or "WAIT":
+          "do you want to wait for a boat or swim across? "
+                 'Type "wait" or "swim" \n')
+    if lake.lower() == "wait":
         house = input("You made it to a house with 3 doors! "
                       "There is a red, yellow, and blue door."
-                      "Which one do you open? "
-                      "Type 'red' 'yellow' or 'blue' \n")
-        if house == "yellow" or "Yellow" or "YELLOW":
-            print("You found the treasure!")
-        elif house == "red" or "Red" or "RED":
-            print("You entered a room of fire. game over.")
-        elif house == "blue" or "Blue" or "BLUE":
-            print("You was attacked by lions. game over.")
+                      " Which one do you open? "
+                      'Type "red" "yellow" or "blue" \n')
+        if house.lower() == "yellow":
+            print("you found the treasure!")
+        elif house.lower() == "red":
+            print("you entered a room of fire. game over.")
+        elif house.lower() == "blue":
+            print("you was attacked by lions. game over.")
         else:
             print("That door doesn't exist. game over.")
     else:
-        print("You were attacked by a shark. game over." )
+        print("you were attacked by a shark. game over." )
 else:
     print("You fell into a pit. game over.")
-
