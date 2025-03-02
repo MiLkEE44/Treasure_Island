@@ -36,14 +36,14 @@ if cross_road.lower() == "left":
                       " Which one do you open? "
                       'Type "red" "yellow" or "blue" \n')
         if house.lower() == "yellow":
-            print("you found the treasure!")
+            print("You found the treasure!")
         elif house.lower() == "red":
-            print("you entered a room of fire. game over.")
+            print("you entered a room of fire. Game over.")
         elif house.lower() == "blue":
-            print("you was attacked by lions. game over.")
+            print("You was attacked by lions. Game over.")
         else:
-            print("That door doesn't exist. game over.")
+            print("That door doesn't exist. Game over.")
     else:
-        print("you were attacked by a shark. game over." )
+        print("You were attacked by a shark. Game over." )
 else:
-    print("You fell into a pit. game over.")
+    print("You fell into a pit. Game over.")
