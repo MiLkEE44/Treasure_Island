@@ -37,9 +37,9 @@ if cross_road == "left" or "Left" or "LEFT":
                       "Type 'red' 'yellow' or 'blue' \n")
         if house == "yellow" or "Yellow" or "YELLOW":
             print("you found the treasure!")
-        elif house == "red":
+        elif house == "red" or "Red" or "RED":
             print("you entered a room of fire. game over.")
-        elif house == "blue":
+        elif house == "blue" or "Blue" or "BLUE":
             print("you was attacked by lions. game over.")
         else:
             print("That door doesn't exist. game over.")
