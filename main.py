@@ -28,7 +28,7 @@ cross_road = input('Type "left" or "right". \n')
 
 if cross_road.lower() == "left":
     lake = input("You've made it to a lake, "
-          "do you want to wait for a boat or swim across? "
+                 "do you want to wait for a boat or swim across? "
                  'Type "wait" or "swim" \n')
     if lake.lower() == "wait":
         house = input("You made it to a house with 3 doors! "
