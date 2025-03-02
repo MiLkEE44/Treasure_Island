@@ -28,7 +28,7 @@ cross_road = input("Type 'left' or 'right'. \n")
 
 if cross_road == "left" or "Left" or "LEFT":
     lake = input("You've made it to a lake, "
-                 "do you want to wait for a boat or swim across? "
+                 "Do you want to wait for a boat or swim across? "
                  "Type 'wait' or 'swim' \n")
     if lake == "wait" or "Wait" or "WAIT":
         house = input("You made it to a house with 3 doors! "
@@ -36,15 +36,15 @@ if cross_road == "left" or "Left" or "LEFT":
                       "Which one do you open? "
                       "Type 'red' 'yellow' or 'blue' \n")
         if house == "yellow" or "Yellow" or "YELLOW":
-            print("you found the treasure!")
+            print("You found the treasure!")
         elif house == "red" or "Red" or "RED":
-            print("you entered a room of fire. game over.")
+            print("You entered a room of fire. game over.")
         elif house == "blue" or "Blue" or "BLUE":
-            print("you was attacked by lions. game over.")
+            print("You was attacked by lions. game over.")
         else:
             print("That door doesn't exist. game over.")
     else:
-        print("you were attacked by a shark. game over." )
+        print("You were attacked by a shark. game over." )
 else:
     print("You fell into a pit. game over.")
 
