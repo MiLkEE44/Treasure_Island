@@ -22,10 +22,11 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-
+# First input to start the game. 
 print("You're at a crossroad, which direction do you want to head?")
 cross_road = input('Type "left" or "right". \n')
-
+# .lower makes any user iteration of input passable. 
+# This is just if/else statements with different outcomes.  
 if cross_road.lower() == "left":
     lake = input("You've made it to a lake, "
                  "do you want to wait for a boat or swim across? "
